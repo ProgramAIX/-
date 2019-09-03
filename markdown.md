@@ -25,6 +25,6 @@
 ***
 -----
 # 五、图片
-![program of pictures](E:\ECCV\xym\new\picture.png"添加图片的语法")
+![program of pictures](E:\ECCV\xym\new\picture.png "添加图片的语法" )
 
 
