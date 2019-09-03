@@ -25,7 +25,7 @@
 ***
 -----
 # 五、图片
-![program of pictures](E:\\ECCV\\xym\\new\\picture.png "添加图片的语法" )
+![program of pictures](E:/ECCV/xym/new/picture.png "添加图片的语法" )
 
 # 六、超链接
 ![超链接语法](E:\ECCV\xym\new\picture1.png)
