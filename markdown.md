@@ -25,10 +25,10 @@
 ***
 -----
 # 五、图片
-![添加图片语法](/picture.png "添加图片的语法" )
+![添加图片语法](pictures/picture.png "添加图片的语法" )
 
 # 六、超链接
-![超链接语法](/p1.png)
+![超链接语法](pictures/p1.png)
 
 [百度](http://baidu.com)
 
