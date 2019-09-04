@@ -20,7 +20,7 @@
 
 ![](error1.png)
 
-解决方法：找到工程目录 (Project) 的.git文件夹，打开之后找到config文件，在最后边加上一句话
+- 解决方法：找到工程目录 (Project) 的.git文件夹，打开之后找到config文件，在最后边加上一句话
 [user]
 email=your email
 name=your name
@@ -30,9 +30,9 @@ name=your name
 
 ## 2.1、修改文件
 ### 2.1.1、git status - 是否修改
-修改了readme文件之后，可以通过***git status***看结果
-![](g3.png)
 
+![](g3.png)
+- 修改了readme文件之后，可以通过***git status***看结果
 - 它可以掌握仓库的状态，通过上图我们知道txt文件被修改了，但还没有准备提交的修改。
 ### 2.1.2、git diff 文件  - 查看修改内容
 之后就可以提交修改，与提交新文件是一样的两步 git add readme.txt
@@ -50,19 +50,18 @@ name=your name
 
 ![](g6.png)
 
-###2.2.2、git reset 
-启动回退，HEAD表示当前版本，上一个版本HEAD^,上上一个版本就是HEAD^^,100的话可以写成HEAD~100
+### 2.2.2、git reset 
 
 ![](g7.png)
+- 启动回退，HEAD表示当前版本，上一个版本HEAD^,上上一个版本就是HEAD^^,100的话可以写成HEAD~100
 #### 2.2.3、git rset --hard commit_id
-回到未来 -未关机。commit后面的数字是commit id版本号，可通过这个（版本号不用写全，前几位就可以）回到之后的版本。（可以向上找到版本号）
-
 ![](g8.png)
-
+- 回到未来 -未关机。commit后面的数字是commit id版本号，可通过这个（版本号不用写全，前几位就可以）回到之后的版本。（可以向上找到版本号）
 #### 2.2.4、git reflog 
-回到未来 -已关机。当使用$git reset --hard HEAD^回退到add distributed版本时，想恢复到add a new line，需要知道它的id。git reflog 用来记录每一次命令
 
 ![](g9.png)
+- 回到未来 -已关机。当使用$git reset --hard HEAD^回退到add distributed版本时，想恢复到add a new line，需要知道它的id。git reflog 用来记录每一次命令
+
 ## 3.1、管理修改
 ![](g10.jpg)
 - 第一次修改 -》git add -》第二次修改 -》git add -》git commit
