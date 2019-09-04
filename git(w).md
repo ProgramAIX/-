@@ -43,15 +43,14 @@ name=your name
 - git commit之后，可以看到git statu的结果，没有需要提交的修改，而且工作目录是干净的。
 ## 2.2、退回版本
 ### 2.2.1、git log 
-查看历史记录,确定回退到哪个版本
+
 ![](g4.png)
+- 查看历史记录,确定回退到哪个版本
 - git log 显示从最近到最远的提交日志，例如最新提交的版本说明‘add a new row’
 - ***git log --pretty=oneline***，精简输出日志
 
 ![](g6.png)
-
 ### 2.2.2、git reset 
-
 ![](g7.png)
 - 启动回退，HEAD表示当前版本，上一个版本HEAD^,上上一个版本就是HEAD^^,100的话可以写成HEAD~100
 #### 2.2.3、git rset --hard commit_id
