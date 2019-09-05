@@ -1,4 +1,5 @@
 # git
+ [git教程命令](https://www.liaoxuefeng.com/wiki/896043488029600)
 ## 1.1、创建版本库
 1 .创建一个空目录
 
@@ -66,7 +67,28 @@ name=your name
 - 第一次修改 -》git add -》第二次修改 -》git add -》git commit
 - 对于每次的修改，如果不存入暂存区(git add)，就不会加入到commit中。（git diff HEAD -- readme.txt查看工作区和版本库里最新版本的区别）
 
+## 4.1、撤销修改
+- 语法：git checkout -- readme.txt。
+- 作用：把readme.txt文件在**工作区**的修改全部撤销。让文件回到最近一次git commit或git add时的状态。
+- 语法：git reset HEAD readme.txt
+- 作用：可以将添加到**暂存区**（git add readme.txt），但未提交的文件，将暂存区的修改撤销，重新放回工作区。
+- 语法：git reset --hard HEAD^
+- 作用：**版本库**修改,使用版本回退的方法，详情2.2
 
+![](pictures/g11.png)
+- git reset命令既可以回退版本，也可以把暂存区的修改回退到工作区。
+- 通过上图，使用git status查看状态，发现两个()代表暂存区为空，工作区有修改（刚才添加的句子）。
+
+## 5.1、删除文件
+- 语法：rm test.txt
+- 作用：从工作区删除(在testgit文件夹中不存在)
+- 语法：git rm test.txt
+- 作用：从版本库中删除该文件(使用git rm删掉，并且git commit)
+- 语法：git checkout -- test.txt
+- 作用：如果删错了，且版本库还有，可以将误删的文件恢复到最新版本(会丢失最近一次提交后修改的内容)
+
+![](pictures/g12.png)
+- **从来没有被添加到版本库就被删除的文件，无法恢复！**
 
 
 
