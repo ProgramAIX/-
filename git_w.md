@@ -111,6 +111,14 @@ name=your name
 
 ![](pictures/g14_1.png)
 
+###6.1.0
+1. 创建SSH key.
+   - 用户主目录下，.ssh目录，其中是否存在id_rsa和id_rsa.pub文件。若没有，则打开shell（Git Bash），创建ssh key:
+   ssh-keygen -t rsa -C "youremail@example.com"
+   生成的上述两个文件，分别是私钥和公钥。
+2. 登录，打开settings-ssh keys 页面-add ssh key- 填上任意title ,在key文本文本框里面粘贴id_rsa.pub文件内容。-add key  
+
+
 ### ***SSH警告***
 ![](pictures/g15.png)
 
